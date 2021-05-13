@@ -43,4 +43,32 @@ public class OperacionesTest {
         int[] result = operaciones.rango(a, b);
         assertArrayEquals(expResult, result);
     }
+    
+    /**
+     * Test of rango method, of class Operaciones.
+     */
+    @Test
+    public void testRango2() {
+        System.out.println("rango");
+        int a = 7;
+        int b = 2;
+        Operaciones operaciones = new Operaciones();
+        int[] expResult = new int[]{2,3,4,5,6,7};
+        int[] result = operaciones.rango(a, b);
+        assertArrayEquals(expResult, result);
+    }
+    
+    /**
+     * Test of rango method, of class Operaciones.
+     */
+    @Test
+    public void testRangoEqualNumberProvided() {
+        System.out.println("rango");
+        int a = 5;
+        int b = 5;
+        Operaciones operaciones = new Operaciones();
+        int[] expResult = new int[]{};
+        int[] result = operaciones.rango(a, b);
+        assertArrayEquals(expResult, result);
+    }
 }
