@@ -11,6 +11,8 @@ import static org.junit.Assert.*;
  */
 public class OperacionesTest {
     
+    Operaciones operaciones;
+    
     public OperacionesTest() {
     }
     
@@ -24,6 +26,7 @@ public class OperacionesTest {
     
     @Before
     public void setUp() {
+        operaciones = new Operaciones();
     }
     
     @After
@@ -38,7 +41,6 @@ public class OperacionesTest {
         System.out.println("rango");
         int a = 2;
         int b = 7;
-        Operaciones operaciones = new Operaciones();
         int[] expResult = new int[]{2,3,4,5,6,7};
         int[] result = operaciones.rango(a, b);
         assertArrayEquals(expResult, result);
@@ -52,7 +54,6 @@ public class OperacionesTest {
         System.out.println("rango");
         int a = 7;
         int b = 2;
-        Operaciones operaciones = new Operaciones();
         int[] expResult = new int[]{2,3,4,5,6,7};
         int[] result = operaciones.rango(a, b);
         assertArrayEquals(expResult, result);
@@ -66,7 +67,6 @@ public class OperacionesTest {
         System.out.println("rango");
         int a = 5;
         int b = 5;
-        Operaciones operaciones = new Operaciones();
         int[] expResult = new int[]{};
         int[] result = operaciones.rango(a, b);
         assertArrayEquals(expResult, result);
