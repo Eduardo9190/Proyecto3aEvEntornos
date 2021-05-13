@@ -29,18 +29,18 @@ public class OperacionesTest {
     @After
     public void tearDown() {
     }
-
+    
     /**
-     * Test of rango method, of class Operaciones.
+     * Test of sumRango method, of class Operaciones.
      */
     @Test
-    public void testRango() {
-        System.out.println("rango");
+    public void testSumRango() {
+        System.out.println("sumRango");
         int a = 2;
-        int b = 7;
+        int b = 6;
         Operaciones operaciones = new Operaciones();
-        int[] expResult = new int[]{2,3,4,5,6,7};
-        int[] result = operaciones.rango(a, b);
-        assertArrayEquals(expResult, result);
+        int expResult = 20;
+        int result = operaciones.sumRango(a, b);
+        assertEquals(expResult, result);
     }
 }
