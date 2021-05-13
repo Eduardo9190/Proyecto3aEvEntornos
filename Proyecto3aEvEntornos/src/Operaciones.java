@@ -2,7 +2,7 @@
  *
  * @author Eduardo Herencias Paco
  */
-class Operaciones{
+public class Operaciones{
     
     /**
      * El método recibe dos valores int y devuelve un array (int) con todos los valores
