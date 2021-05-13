@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Eduardo Herencias
+ * @author Eduardo Herencias Paco
  */
 public class OperacionesTest {
     
