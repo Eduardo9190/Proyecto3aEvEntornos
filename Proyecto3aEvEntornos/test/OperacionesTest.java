@@ -11,6 +11,8 @@ import static org.junit.Assert.*;
  */
 public class OperacionesTest {
     
+    Operaciones operaciones;
+            
     public OperacionesTest() {
     }
     
@@ -24,6 +26,7 @@ public class OperacionesTest {
     
     @Before
     public void setUp() {
+        operaciones = new Operaciones();
     }
     
     @After
@@ -38,8 +41,33 @@ public class OperacionesTest {
         System.out.println("sumRango");
         int a = 2;
         int b = 6;
-        Operaciones operaciones = new Operaciones();
         int expResult = 20;
+        int result = operaciones.sumRango(a, b);
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of sumRango method, of class Operaciones.
+     */
+    @Test
+    public void testSumRango2() {
+        System.out.println("sumRango");
+        int a = 6;
+        int b = 2;
+        int expResult = 20;
+        int result = operaciones.sumRango(a, b);
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of sumRango method, of class Operaciones.
+     */
+    @Test
+    public void testSumRangoEqualNumberProvided() {
+        System.out.println("sumRango");
+        int a = 5;
+        int b = 5;
+        int expResult = 0;
         int result = operaciones.sumRango(a, b);
         assertEquals(expResult, result);
     }
