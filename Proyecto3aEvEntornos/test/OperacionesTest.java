@@ -7,45 +7,17 @@ import static org.junit.Assert.*;
 
 /**
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @author CES
-=======
  * @author Eduardo Herencias
->>>>>>> isPar
-=======
- * @author Eduardo Herencias
->>>>>>> extraerPositivos
  */
 public class OperacionesTest {
     
     Operaciones operaciones;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
-            
->>>>>>> sumRango
-=======
-    
->>>>>>> isPar
-=======
-    
->>>>>>> extraerPositivos
+
     public OperacionesTest() {
     }
     
     @BeforeClass
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public static void setUpClass() {
-=======
     public static void setUpClass() {   
->>>>>>> isPar
-=======
-    public static void setUpClass() {
->>>>>>> extraerPositivos
     }
     
     @AfterClass
@@ -60,21 +32,18 @@ public class OperacionesTest {
     @After
     public void tearDown() {
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
     
     /**
      * Test of sumRango method, of class Operaciones.
      */
     @Test
-    public void testSumRango() {
+    public void testRango() {
         System.out.println("sumRango");
         int a = 2;
-<<<<<<< HEAD
         int b = 7;
         int[] expResult = new int[]{2,3,4,5,6,7};
         int[] result = operaciones.rango(a, b);
-=======
+    }
     
     /**
      * Test of extraerPositivos method, of class Operaciones.
@@ -85,12 +54,10 @@ public class OperacionesTest {
         int[] nums = new int[]{1,-2,3,4,-5,6};
         int[] expResult = new int[]{1,3,4,6};
         int[] result = operaciones.extraerPositivos(nums);
->>>>>>> extraerPositivos
         assertArrayEquals(expResult, result);
     }
     
     /**
-<<<<<<< HEAD
      * Test of rango method, of class Operaciones.
      */
     @Test
@@ -115,8 +82,14 @@ public class OperacionesTest {
         int[] result = operaciones.rango(a, b);
         assertArrayEquals(expResult, result);
     }
-}
-=======
+
+    /**
+     * Test of sumRango method, of class Operaciones.
+     */
+    @Test
+    public void testSumRango(){
+        System.out.println("rango");
+        int a = 2;
         int b = 6;
         int expResult = 20;
         int result = operaciones.sumRango(a, b);
@@ -148,9 +121,7 @@ public class OperacionesTest {
         int result = operaciones.sumRango(a, b);
         assertEquals(expResult, result);
     }
-}
->>>>>>> sumRango
-=======
+
 
     /**
      * Test of isPar method, of class Operaciones.
@@ -193,9 +164,8 @@ public class OperacionesTest {
         System.out.println("isParException");
         int a = -4;
     }
-}
->>>>>>> isPar
-=======
+
+    /**
      * Test of extraerPositivos method, of class Operaciones.
      */
     @Test(expected = IllegalArgumentException.class)
@@ -216,4 +186,3 @@ public class OperacionesTest {
         assertArrayEquals(expResult, result);
     }
 }
->>>>>>> extraerPositivos
