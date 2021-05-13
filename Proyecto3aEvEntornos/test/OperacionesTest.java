@@ -7,21 +7,33 @@ import static org.junit.Assert.*;
 
 /**
  *
+<<<<<<< HEAD
  * @author CES
+=======
+ * @author Eduardo Herencias
+>>>>>>> isPar
  */
 public class OperacionesTest {
     
     Operaciones operaciones;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
             
 >>>>>>> sumRango
+=======
+    
+>>>>>>> isPar
     public OperacionesTest() {
     }
     
     @BeforeClass
+<<<<<<< HEAD
     public static void setUpClass() {
+=======
+    public static void setUpClass() {   
+>>>>>>> isPar
     }
     
     @AfterClass
@@ -36,6 +48,7 @@ public class OperacionesTest {
     @After
     public void tearDown() {
     }
+<<<<<<< HEAD
     
     /**
      * Test of sumRango method, of class Operaciones.
@@ -111,3 +124,48 @@ public class OperacionesTest {
     }
 }
 >>>>>>> sumRango
+=======
+
+    /**
+     * Test of isPar method, of class Operaciones.
+     */
+    @Test
+    public void testIsPar() {
+        System.out.println("isPar");
+        int a = 6;
+
+        boolean expResult = true;
+        boolean result = operaciones.isPar(a);
+    }
+    
+    /**
+     * Test of isPar method, of class Operaciones.
+     */
+    @Test
+    public void testIsNotPar() {
+        System.out.println("isNotPar");
+        int a = 7;
+
+        boolean expResult = false;
+        boolean result = operaciones.isPar(a);
+    }
+    
+    /**
+     * Test of isPar method, of class Operaciones.
+     */
+    @Test(expected=IllegalArgumentException.class)
+    public void testIsParExceptionZero() {
+        System.out.println("isParExceptionZero");
+        int a = 0;
+    }
+    
+    /**
+     * Test of isPar method, of class Operaciones.
+     */
+    @Test(expected=IllegalArgumentException.class)
+    public void testIsParExceptionNegative() {
+        System.out.println("isParException");
+        int a = -4;
+    }
+}
+>>>>>>> isPar
