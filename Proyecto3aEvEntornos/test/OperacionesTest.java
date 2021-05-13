@@ -8,14 +8,19 @@ import static org.junit.Assert.*;
 /**
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author CES
 =======
  * @author Eduardo Herencias
 >>>>>>> isPar
+=======
+ * @author Eduardo Herencias
+>>>>>>> extraerPositivos
  */
 public class OperacionesTest {
     
     Operaciones operaciones;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     
@@ -25,15 +30,22 @@ public class OperacionesTest {
 =======
     
 >>>>>>> isPar
+=======
+    
+>>>>>>> extraerPositivos
     public OperacionesTest() {
     }
     
     @BeforeClass
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static void setUpClass() {
 =======
     public static void setUpClass() {   
 >>>>>>> isPar
+=======
+    public static void setUpClass() {
+>>>>>>> extraerPositivos
     }
     
     @AfterClass
@@ -49,6 +61,7 @@ public class OperacionesTest {
     public void tearDown() {
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     /**
      * Test of sumRango method, of class Operaciones.
@@ -61,10 +74,23 @@ public class OperacionesTest {
         int b = 7;
         int[] expResult = new int[]{2,3,4,5,6,7};
         int[] result = operaciones.rango(a, b);
+=======
+    
+    /**
+     * Test of extraerPositivos method, of class Operaciones.
+     */
+    @Test
+    public void testExtraerPositivos() {
+        System.out.println("extraerPositivos");
+        int[] nums = new int[]{1,-2,3,4,-5,6};
+        int[] expResult = new int[]{1,3,4,6};
+        int[] result = operaciones.extraerPositivos(nums);
+>>>>>>> extraerPositivos
         assertArrayEquals(expResult, result);
     }
     
     /**
+<<<<<<< HEAD
      * Test of rango method, of class Operaciones.
      */
     @Test
@@ -169,3 +195,25 @@ public class OperacionesTest {
     }
 }
 >>>>>>> isPar
+=======
+     * Test of extraerPositivos method, of class Operaciones.
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testExtraerPositivosNull() {
+        System.out.println("extraerPositivos");
+        int[] nums = null;
+    }
+    
+    /**
+     * Test of extraerPositivos method, of class Operaciones.
+     */
+    @Test
+    public void testExtraerPositivosEmpty() {
+        System.out.println("extraerPositivos");
+        int[] nums = new int[]{};
+        int[] expResult = new int[]{};
+        int[] result = operaciones.extraerPositivos(nums);
+        assertArrayEquals(expResult, result);
+    }
+}
+>>>>>>> extraerPositivos
