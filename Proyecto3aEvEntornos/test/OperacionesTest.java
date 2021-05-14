@@ -154,6 +154,7 @@ public class OperacionesTest {
     public void testIsParExceptionZero() {
         System.out.println("isParExceptionZero");
         int a = 0;
+        operaciones.isPar(a);
     }
     
     /**
@@ -163,6 +164,7 @@ public class OperacionesTest {
     public void testIsParExceptionNegative() {
         System.out.println("isParException");
         int a = -4;
+        operaciones.isPar(a);
     }
 
     /**
@@ -172,6 +174,7 @@ public class OperacionesTest {
     public void testExtraerPositivosNull() {
         System.out.println("extraerPositivos");
         int[] nums = null;
+        operaciones.extraerPositivos(nums);
     }
     
     /**
